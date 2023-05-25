@@ -8,12 +8,12 @@
 }
 
 body {
-    background-color: #64AAD9;
+    background-color: #8bcefa;
 }
 
 header {
     background-color: #7AE1F0;
-    background-image: linear-gradient(to bottom, #7AE1F0, #79DACC);
+    background-image: linear-gradient(to bottom, #81eeff, #94eee0);
     padding: 25px;
     text-align: center;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
@@ -21,21 +21,7 @@ header {
 
 a {
     text-decoration: none;
-    color: white;
-}
-
-a.titulo {
     color: black;
-    padding: 5px;
-}
-
-a.externo::after {
-    content: '\1F517';
-}
-
-a.externo:hover {
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 main {
@@ -45,11 +31,13 @@ main {
     margin: auto;
     text-align: justify; border-radius: 5px;
     margin-bottom: 5px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 li {
     text-align: left;
     color: black;
+    margin-bottom: 5px;
 }
 
 iframe {
@@ -62,14 +50,21 @@ div {
     width: 560px;
 }
 
-footer > a:hover {
+footer {
     padding: 10px;
     background-color: rgb(86, 86, 86);
     color: white;
 }
 
-footer {
-    padding: 10px;
-    background-color: rgb(86, 86, 86);
+footer a{
     color: white;
+}
+
+footer  a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer  a::after {
+    content: '\1F517';
 }
